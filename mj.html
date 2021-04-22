@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <!-- <link href="/css/bootstrap.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>MJ</title>
+</head>
+<style>
+    * {
+        font-family: "MUJIFont-Light", "Helvetica", "Lucida Grande", "Microsoft JhengHei", sans-serif;
+    }
+
+    .navbar {
+        padding: 0 20px !important;
+    }
+
+    .navbar-brand {
+        margin: 0 auto;
+    }
+
+    .navbar-toggler {
+        border: white;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .logo {
+        margin: 30px 10px;
+    }
+
+    .garybox {
+        height: 30px;
+        background-color: #F2F2F2;
+    }
+
+    .remind {
+        float: left;
+        line-height: 30px;
+        font-size: 14px;
+        margin: 0 20px;
+    }
+
+    .bluebar {
+        color: #6AB8F9;
+        margin: 0 20px;
+    }
+
+    /* -----------photo----------- */
+
+    .bgimg {
+        justify-content: center;
+        font-size: 18px;
+        padding: 10px;
+
+    }
+
+    .img-fluid-b {
+        margin-top: 20px;
+
+    }
+
+    .img-fluid1 {
+        margin-top: 20px;
+    }
+
+    .img-fluid2 {
+        height: auto;
+        width: 1200px;
+        max-width: 100%;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .img-fluid {
+        margin-bottom: 30px;
+    }
+
+
+    .more {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 14px;
+        cursor: pointer;
+        color: gray;
+    }
+
+
+    .more1 {
+        font-size: 14px;
+        float: right;
+        cursor: pointer;
+        color: gray;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+
+    /* ------------map------------ */
+    .googlemap-rwd {
+        position: relative;
+        height: 0;
+        padding-bottom: 30%;
+        overflow: hidden
+    }
+
+    .googlemap-rwd iframe,
+    .googlemap-rwd object,
+    .googlemap-rwd embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .more3 {
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        cursor: pointer;
+        color: gray;
+    }
+
+
+    /* ------------timetable-------------- */
+    .note {
+        display: block;
+        margin: 0 0 10px;
+        font-size: 14px;
+
+    }
+
+    .timetable {
+        font-size: 13px;
+        color: #999999;
+        display: block;
+        margin: 0 0 10px;
+        cursor: pointer;
+    }
+
+    .text {
+        font-size: 14px;
+        color: #666666;
+        cursor: pointer;
+    }
+
+    .text1 {
+        margin-bottom: 100px;
+        cursor: pointer;
+    }
+
+    /* -------------footer-------------- */
+    .ft {
+        padding: 10px 30px;
+    }
+
+    .garybar {
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        background-color: #EBEBEB;
+    }
+
+    .footernav {
+        color: white;
+        background-color: black;
+    }
+
+    .footerbox {
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid white;
+    }
+
+    .t1-1 {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-size: 14px;
+        color: white;
+    }
+
+    .t1-1 li {
+        padding: 10px;
+    }
+
+    .taiwan {
+        font-size: 14px;
+        padding: 10px;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .end {
+        font-size: 14px;
+        padding: 10px;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        color: #887e7ed0;
+        ;
+    }
+</style>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white mx-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand mx-auto" href="#">
+                <img class="logo" src="./無印良品網頁圖片/logo_muji_b.png" width="auto" height="20" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">商品情報</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">門市活動</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">企業情報</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">良品生活研究所</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">大宗採購</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">展店合作</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">顧客服務</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">店鋪情報</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">公告</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">空間改造企劃服務</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#">
+                <img src="./無印良品網頁圖片/icon_search_b.png" width="auto" height="20" alt="">
+            </a>
+        </nav>
+
+        <div class="container">
+            <div class="garybox">
+
+                <h1 class="remind">
+                    貼心提醒
+                    <a href="">
+                        <b class="bluebar">仿冒品提醒聲明</b>
+                    </a>
+                </h1>
+
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-demo" data-slide-to="1"></li>
+                    <li data-target="#carousel-demo" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./無印良品網頁圖片/1024X640-220121.jpg"
+                            class="d-block w-100 img-fluid2 img-fluid-b the .mx-auto margin utility class"
+                            alt="Responsive image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./無印良品網頁圖片/200327_640400.jpg"
+                            class="d-block w-100 img-fluid2 img-fluid-b the .mx-auto margin utility class"
+                            alt="Responsive image">>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./無印良品網頁圖片/200529_640400.jpg"
+                            class="d-block w-100 img-fluid2 img-fluid-b the .mx-auto margin utility class"
+                            alt="Responsive image">>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <!-- <img src="./無印良品網頁圖片/1024X640-220121.jpg" class="img-fluid2 img-fluid-b the .mx-auto margin utility class"
+                alt="Responsive image"> -->
+
+            <div class="row justify-content-center">
+                <div class="art col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
+                    <h1><img src="./無印良品網頁圖片/goodvalue-640X400-201210.jpg "
+                            class="img-fluid2 img-fluid1 the .mx-auto margin utility class" alt="Responsive image"></h1>
+                </div>
+                <div class="art col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
+                    <h2><img src="./無印良品網頁圖片/640X400-201225.jpg"
+                            class="img-fluid2 img-fluid1 the .mx-auto margin utility class" alt="Responsive image">
+                    </h2>
+                </div>
+                <div class="art col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
+                    <h3><img src="./無印良品網頁圖片/curry-640X400-201027.jpg"
+                            class="img-fluid2 img-fluid1 the .mx-auto margin utility class" alt="Responsive image"></h3>
+                </div>
+                <div class="art col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
+                    <h4><img src="./無印良品網頁圖片/ph-title1.png"
+                            class="img-fluid2 img-fluid1 the .mx-auto margin utility class" alt="Responsive image"></h4>
+                </div>
+                <div class="art col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
+                    <h5><img src="./無印良品網頁圖片/640X400-inner-201209.jpg"
+                            class="img-fluid2 the .mx-auto margin utility class" alt="Responsive image"></h5>
+                </div>
+                <div class="art col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
+                    <h6><img src="./無印良品網頁圖片/ph-title2.png" class="img-fluid2 the .mx-auto margin utility class"
+                            alt="Responsive image"></h6>
+                </div>
+                <div class="art col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
+                    <h7><img src="./無印良品網頁圖片/ph-title3.png" class="img-fluid2 the .mx-auto margin utility class"
+                            alt="Responsive image"></h7>
+                </div>
+                <div class="art col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-3">
+                    <h8><img src="./無印良品網頁圖片/lecture_38_640.jpg" class="img-fluid2 the .mx-auto margin utility class"
+                            alt="Responsive image"></h8>
+                </div>
+            </div>
+
+            <div>
+                <span class="more">活動特集</span>
+            </div>
+            <div>
+                <h2 class="title">良品服務</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="art col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                    <img src="./無印良品網頁圖片/ph-title4.png" class="img-fluid2 img-fluid the .mx-auto margin utility class"
+                        alt="">
+                </div>
+                <div class="art col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                    <img src="./無印良品網頁圖片/mujibooks_640.jpg"
+                        class="img-fluid2 img-fluid the .mx-auto margin utility class" alt="">
+                </div>
+                <div class="art col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                    <img src="./無印良品網頁圖片/ph-title5.png" class="img-fluid2 img-fluid the .mx-auto margin utility class"
+                        alt="">
+                </div>
+            </div>
+
+            <div>
+                <span class="more1">看更多</span>
+            </div>
+            <div>
+                <h3 class="title">良品生活研究所</h3>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="art col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                    <img src="./無印良品網頁圖片/ph-new1.png" class="img-fluid2 img-fluid the .mx-auto margin utility class"
+                        alt="">
+                </div>
+                <div class="art col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                    <img src="./無印良品網頁圖片/ph-new2.png" class="img-fluid2 img-fluid the .mx-auto margin utility class"
+                        alt="">
+                </div>
+                <div class="art col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                    <img src="無印良品網頁圖片/ph-new3.png" class="img-fluid2 img-fluid the .mx-auto margin utility class"
+                        alt="">
+                </div>
+            </div>
+
+            <div>
+                <span class="more1">門市服務一覽</span>
+            </div>
+            <div>
+                <h4 class="title">門市服務
+                </h4>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="art col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                    <img src="./無印良品網頁圖片/171031_mujicard_640_1.jpg"
+                        class="img-fluid2 img-fluid the .mx-auto margin utility class" alt="">
+                </div>
+                <div class="art col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                    <img src="./無印良品網頁圖片/ph-new4.png" class="img-fluid2 img-fluid the .mx-auto margin utility class"
+                        alt="">
+                </div>
+                <div class="art col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                    <img src="./無印良品網頁圖片/ph-new5.png" class="img-fluid2 img-fluid the .mx-auto margin utility class"
+                        alt="">
+                </div>
+            </div>
+
+            <div>
+                <span class="more1">店舖一覽</span>
+            </div>
+
+            <div>
+                <h5 class="title">店舖情報</h5>
+            </div>
+
+            <div class="googlemap-rwd"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14457.85309092102!2d121.51233282343213!3d25.052282548941104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a96eb278aaab%3A0x988348121b985230!2z54Sh5Y2w6Imv5ZOBIOaWsOWFieWNl-ilv-mWgOW4gg!5e0!3m2!1szh-TW!2stw!4v1612928210356!5m2!1szh-TW!2stw"
+                    width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe></div>
+            <div>
+                <span class="more3">看更多</span>
+            </div>
+
+            <div class="container">
+                <h6 class="note">公告</h6>
+                <span class="timetable">2021-01-29</span>
+                <p class="text">年前整理需求夯，MUJI無印良品攜手《橘世代》營造好感生活， 破解收納兩大迷思，MUJI無印良品提供家具配置諮詢服務</p>
+                <span class="timetable">2021-01-25</span>
+                <p class="text">為春節返鄉拜年作準備，MUJI無印良品邀您「和良品迎新春」滿足新春贈禮需求，單筆消費滿500元即享免費禮盒包裝服務</p>
+                <span class="timetable">2021-01-20</span>
+                <p class="text text1">MUJI無印良品新店門市1/20盛大開幕，北部第一間「聯連市」市集，強調產地直送安心安全，攜手在地農家，1/20-1/31單筆消費滿額送限量茶浴包</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="garybar mt-auto"></div>
+    <footer class="footernav">
+        <div class="container ft">
+            <div class="footerbox">
+                <ul class="row t1-1">
+                    <li>
+                        <p>商品情報</p>
+                    </li>
+                    <li>
+                        <p>門市活動</p>
+                    </li>
+                    <li>
+                        <p>店舗情報</p>
+                    </li>
+                    <li>
+                        <p>Café&Meal MUJI</p>
+                    </li>
+                    <li>
+                        <p>會員服務</p>
+                    </li>
+                    <li>
+                        <p>良品生活研究所</p>
+                    </li>
+                    <li>
+                        <p>FB粉絲團</p>
+                    </li>
+                    <li>
+                        <p>Instagram</p>
+                    </li>
+                    <li>
+                        <p>LINE</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerbox">
+                <ul class="row t1-1">
+                    <li>
+                        <p>公告</p>
+                    </li>
+                    <li>
+                        <p>防冒品提醒聲明</p>
+                    </li>
+                    <li>
+                        <p>人才招募</p>
+                    </li>
+                    <li>
+                        <p>企業情報</p>
+                    </li>
+                    <li>
+                        <p>門市服務</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerbox">
+                <ul class="row t1-1">
+                    <li>
+                        <p>大宗採購</p>
+                    </li>
+                    <li>
+                        <p>展店合作</p>
+                    </li>
+                    <li>
+                        <p>博客來網路門市</p>
+                    </li>
+                    <li>
+                        <p>7-ELEVEN線上購物中心</p>
+                    </li>
+                    <li>
+                        <p>momo購物網路門市</p>
+                    </li>
+                    <li>
+                        <p>7-ELEVEN店中店</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="taiwan">台灣
+            </div>
+            <div class="end">© Ryohin Keikaku Co., Ltd.
+                台灣無印良品股份有限公司 版權所有 轉載必究 © MUJI.tw Co., Ltd.
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
